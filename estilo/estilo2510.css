@@ -1,0 +1,772 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap');
+
+/******************     BASE     ******************/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    color: #000000;
+    font-family: "Inter", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1250px;
+    border: 0px solid blue;
+}
+ul
+{
+    list-style: none;
+}
+
+/******************     BASE     ******************/
+
+
+/******************     HEADER     ******************/
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 130px;
+    padding: 5px;
+    background-image: linear-gradient(to right, #1a2158, #3845bd);
+    /*background-image: linear-gradient(to right, rgba(2,0,36,1) 90%,  rgba(255,255,255,1) 15%);*/
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 75%, rgba(255,255,255,1) 100%);
+    box-sizing: border-box;
+}
+header .cabecalho
+{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 40px;
+    border: 2px solid orange;
+}
+header .logo-lacen 
+{
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 135px;
+    height: 135px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgb(80, 154, 252);
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 20px #000;
+    z-index: 10;
+}
+header .logo-lacen img
+{
+    max-width: 100%;
+    width: 60%;
+}
+header .governo-pe
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    border: 0px solid rgb(115, 255, 0);
+    box-sizing: border-box;
+}
+header .logo-ses
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0px solid yellow;
+    width: 100%;
+    height: 100%;
+    color: rgb(19, 33, 104);
+}
+header .logo-ses img
+{
+    width: 80px;
+    max-width: 100%;
+    height: 90%;
+    border: 0px solid red;
+}
+header .logo-ses h5
+{
+    font-size: 1.0rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 0px solid blue;
+}
+header .logo-ses h6
+{
+    font-size: 0.55rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+}
+header nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    margin-top: 70px;
+    width: 70%;
+    height: 30px;
+    padding: 0 0 0 12px;
+    gap: 80px;
+    color: white;
+    background-color: transparent;
+    border: 0px solid yellow;
+
+}
+header nav .menu-site
+{
+/*    flexx: 1;
+    width: 100px;
+    */
+}
+header nav ul
+{
+    display: flex;
+    flex: 3;
+    gap: 30px;
+}
+header nav ul li
+{
+    color: white;
+}
+header nav ul li a
+{
+    margin-right: 20px;
+    color: white;
+}
+
+header nav .pesquisa-site
+{
+    display: flex;
+    flexx: 1;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    border: 0px solid greenyellow;
+
+}
+header nav .pesquisa-site input
+{
+    flex: 12;
+    padding: 7px;
+    
+    font-size: 0.8rem;
+    border-radius: 20px;
+
+    background-color: white;
+}
+header nav .pesquisa-site img
+{
+    flex: 1;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/******************     HEADER     ******************/
+
+
+
+/******************     MAIN     ******************/
+
+main
+{
+    width: 100%;
+    border: 0px solid greenyellow;
+
+}
+.titulo
+{
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.titulo-2
+{
+    font-size: 42px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.sub-titulo
+{
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #555;
+}
+
+
+/******************     MAIN - SLIDES     ******************/
+main .secao-slides
+{
+    width: 100%;
+
+    border: 0px solid magenta;
+}
+main .secao-slides img
+{
+    width: 100%;
+    max-width: 1250px;
+}
+/******************     MAIN - SLIDES     ******************/
+
+
+/******************     MAIN - INFORMACOES     ******************/
+
+main .secao-informacoes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 50px;
+    padding-left: 10px;
+    border: 0px solid rgb(0, 255, 140);
+}
+main .secao-informacoes .leftside
+{
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    
+}
+main .secao-informacoes .leftside .btn-link-info
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 270px;
+    margin-bottom: 12px;
+    padding: 15px 25px;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #1a2158;
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+main .secao-informacoes .rightside
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+    border: 0px solid red;
+}
+main .secao-informacoes .rightside .ultimas-noticias
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 40%;
+    border: 0px solid blue;
+}
+
+main .secao-informacoes .rightside .ultimas-noticias p
+{
+    margin-top: 20px;
+    color: #555;
+    font-size: 15px;
+    font-weight: 500;
+}
+main .secao-informacoes .rightside .ultimas-noticias-img
+{
+    
+    width: 60%;
+    margin-left: 100px;
+}
+main .secao-informacoes .rightside .ultimas-noticias-img img
+{
+    width: 100%;
+    max-width: 100%;
+}
+
+/******************     MAIN - INFORMACOES     ******************/
+
+
+/******************     MAIN - SERVIÇOS     ******************/
+
+main .secao-servicos
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    width: 100%;
+    border: 0px solid rgb(137, 68, 4);
+}
+main .secao-servicos .links-servicos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+main .secao-servicos .links-servicos .btn-link-servico
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+    padding: 12px;
+    width: 170px;
+    height: 170px;
+    font-weight: 500;
+    color: white;
+    background-color: #1a2158;
+    border-radius: 50%;
+}
+
+/******************     MAIN - SERVIÇOS     ******************/
+
+
+
+/******************     MAIN     ******************/
+
+
+/******************     COMO-CHEGAR     ******************/
+
+.secao-como-chegar
+{
+    margin-top: 150px;
+    width: 100%;
+    border: 0px solid rgb(4, 113, 137);
+}
+.secao-como-chegar .titulo-2
+{
+    margin-left: 300px;
+    font-size: 35px;
+}
+.secao-como-chegar .mapa iframe
+{
+    margin-top: 20px;
+    width: 100%;
+    height: 360px;
+    border: 1px solid #888;
+}
+/******************     COMO-CHEGAR     ******************/
+
+
+/******************     FOOTER     ******************/
+
+footer
+{
+    padding: 50px;
+    width: 100%;
+    background-color: #1a2158;
+}
+footer .endereco
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+/******************     FOOTER     ******************/
+
+
+
+/******************     PÁGINA - INSTITUCIONAL     ******************/
+
+/******************     SECAO - INSTITUCIONAL     ******************/
+
+main .secao-institucional .titulo
+{
+    margin: 60px 30px 30px 30px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #888;
+}
+main .secao-institucional .area-texto
+{
+    margin: 40px 60px 60px 60px;
+}
+main .secao-institucional .area-texto p
+{
+    margin: 0 10px 20px 10px;
+    text-align: justify;
+}
+
+/******************     SECAO - INSTITUCIONAL     ******************/
+
+
+
+
+/******************     PÁGINA - INSTITUCIONAL     ******************/
+
+
+
+/******************     PÁGINA - CONTATO     ******************/
+
+.secao-contato .titulo
+{
+    margin: 60px 30px 30px 30px;
+    text-transform: capitalize;
+    border-bottom: 1px solid #888;
+}
+.area-contato
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 10px 0 0 10px;
+    margin: 40px 60px 60px 60px;
+    border-top: 0px solid blue;
+}
+.area-contato .cabecalho-dados
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.cabecalho-area
+{
+    width: 20%;
+}
+.cabecalho-contato
+{
+    width: 30%;
+}
+.cabecalho-telefone
+{
+    width: 10%;
+}
+.cabecalho-email
+{
+    width: 40%;
+}
+.dados
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 5px 0 5px 0px;
+}
+.dados .dados-area
+{
+    width: 20%;
+}
+.dados .dados-contato
+{
+    width: 30%;
+}
+.dados .dados-telefone
+{
+    width: 10%;
+}
+.dados .dados-email
+{
+    width: 40%;
+}
+/*
+.area-contato .cabecalho-dados
+{
+    display: grid;
+    grid-template-columns: 200px 400px 100px 500px;
+ /*   grid-template-areas: 
+        'area area area area'
+        'contato contato contato contato'
+        'telefone telefone telefone telefone'
+        'email email email email';
+*/
+/*
+    gap: 15px;
+    margin-bottom: 10px;
+    padding: 8px;
+    width: 100%;
+    color: #1e2cab;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 0px solid green;
+}
+.dados
+{
+    display: grid;
+    grid-template-columns: 200px 400px 100px 500px;
+    gap: 10px;
+}
+.dados-area
+{
+/*    grid-area: dados-area;*/
+/*
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 200px;
+}
+.dados-contato
+{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 300px;
+}
+.dados-telefone
+{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.dados-email
+{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.area-contato .dados
+{
+    display: grid;
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*
+    grid-template-columns: 100px 300px 50px 300px;
+    gap: 20px;
+    /*grid-column-gap: 20px;
+    grid-row-gap: 30px;*/
+    /*
+    padding: 2px;
+    color: #1e2cab;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: left;
+    border: 0px solid green;
+}
+.area-contato .dados .dados-info
+{
+    width: 100%;
+    padding: 5px;
+    border: 0px solid red;
+}
+*/
+
+
+
+/******************     PÁGINA - CONTATO     ******************/
+
+
+/******************     PÁGINA - EXAMES OFERTADOD     ******************/
+
+.exames_ofertados
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 80px 0 5px;
+    width: 100%;
+    border: 0px solid blue;
+}
+.exames_ofertados .titulo
+{
+    font-size: 2.7rem;
+    text-transform: capitalize;
+    padding: 30px;
+    border: 0px solid red;
+}
+.secao-titulo h1
+{
+    font-size: 2rem;
+    margin-top: 0px;
+    padding: 5px;
+    border: 0px solid red;
+}
+
+.listas_exames
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    border: 0px solid red;
+}
+.lista_exames h1
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.lista_exames
+{
+    width: 30%;
+    
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    /*overflow-y: scroll;*/
+
+}
+.lista_exames a
+{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    padding: 3px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lista_exames li
+{
+    /*list-style: square;    */
+    padding: 3px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.lista_exames a:visited
+{
+    color: #000000;
+}
+
+
+
+/******************    FIM DE PÁGINA - EXAMES OFERTADOD     ******************/
+
+/******************     TELA MAXIMA 800PX     ******************/
+@media (max-width: 800px)
+{
+    main .secao-informacoes .rightside
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        border: 0px solid red;
+    }
+    main .secao-informacoes .rightside .ultimas-noticias
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 80%;
+        border: 0px solid blue;
+    }
+    main .secao-informacoes .rightside .ultimas-noticias-img
+    {
+        width: 80%;
+        margin-left: 10px;
+    }
+    main .secao-informacoes .rightside .ultimas-noticias-img img
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+/******************     TELA MAXIMA 800PX     ******************/
+
+
+/******************     TELA MAXIMA 425PX     ******************/
+@media (max-width: 425px)
+{
+    main .secao-informacoes
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main .secao-informacoes .rightside
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        border: 0px solid red;
+    }
+    main .secao-informacoes .rightside .ultimas-noticias
+    {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        width: 80%;
+        border: 0px solid blue;
+    }
+    main .secao-informacoes .rightside .ultimas-noticias-img
+    {
+        width: 80%;
+        margin-left: 10px;
+    }
+    main .secao-informacoes .rightside .ultimas-noticias-img img
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+
+    main .secao-servicos
+    {
+        align-items: center;
+    }
+    main .secao-servicos .links-servicos
+    {
+        flex-direction: column;
+    }
+    main .secao-servicos .links-servicos .btn-link-servico
+    {
+        margin-bottom: 10px;
+    }
+
+    .secao-como-chegar
+    {
+        margin-top: 100px;
+        width: 100%;
+        text-align: center;
+        border: 0px solid rgb(4, 113, 137);
+    }
+    .secao-como-chegar .titulo-2
+    {
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    footer
+    {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+
+
+/******************     TELA MAXIMA 425PX     ******************/
+
