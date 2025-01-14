@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LACEN</title>
+    <link rel="stylesheet"  href="estilo.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html"> Home</a> > 
+            </li>
+            <li>
+                <a href="Informações.html"> Informações </a> >
+            </li>
+            <li>
+                <a href="examesOfertadosBiologiaMedica.html"> Exames Ofertados - Biologia Médica </a> >
+            </li>
+            <li>
+                <a href="doencasDiarreicasAgudas.html">Doenças Diarréicas Agudas</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Doenças Diarréicas Agudas</h1>
+    <dt>Metodologia:</dt>
+    <dd>
+        Cultura em meios adequados
+    </dd>    
+    <dt>Amostra biológica:</dt>
+    <dd>
+        Swab Fecal e Swab Retal.
+    </dd>    
+    <dt>Volume ideal:</dt>
+    <dd>
+        Não se aplica.
+    </dd>
+    <dt>Período ideal de coleta:</dt>
+    <dd>
+        No início da diarréia e antes do uso de antibióticos.
+    </dd>
+    <dt>Orientações para a coleta de amostra:</dt>
+    <dd>
+        Swab retal: Introduzir o swab na ampola retal, comprimindo-o, em movimentos rotatórios suaves, em toda a extensão da ampola; inocular no meio de transporte Cary-Blair;<br>
+        Swab fecal: Recolher parte das fezes com o auxílio de um swab; introduzir o swab no meio de transporte Cary-Blair.
+    </dd>
+    <dt>Conservação da amostra até o envio:</dt>
+    <dd>
+        Material colhido nos coletores, enviar imediatamente ao LACEN/PE ou manter sob refrigeração 2 a 8º C até 24 hs.
+    </dd>
+    <dt>Forma de acondicionamento para transporte:</dt>
+    <dd>
+        Coletores com Fezes, enviar com baterias de gelo reciclável, os swabs na temperatura ambiente.
+    </dd>
+    <dt>Formulários requeridos:</dt>
+    <dd>
+        Obrigatório o cadastro no Gerenciador de Ambiente Laboratorial (GAL) e Formulário de Notificação de DDA.
+    </dd>
+    <dt>Informações complementares:</dt>
+    <dd>
+        As amostras devem ser encaminhadas ao LACEN, após o cadastramento no Sistema de Gerenciamento do Ambiente Laboratorial (GAL). Para visualizar os resultados, a unidade solicitante deverá consultar o GAL.
+    </dd>
+
+    <?php
+        include "rodape.html";
+    ?>
+</body>
+</html>
