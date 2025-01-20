@@ -1,4 +1,4 @@
-        <a href="index.php">    
+<a href="index.php">    
             <div class="logo-lacen">
                 <img src="../imagens/logos1/lacen_logo1_transp.png" alt="LACEN-PE">
             </div>
@@ -15,7 +15,7 @@
             </ul>
 
             <div class="pesquisa-site">
-                <input type="search" name="pesquisa-site" id="pesquisa-site" placeholder="O que você está procurando">
+                <input type="search" name="pesquisa-site" id="pesquisa-site" placeholder="O que você está procurando?">
                 <a href=""><img src="../imagens/lupas/lupa1.png" alt="Pesquisa no site"></a>
             </div>
 
@@ -23,8 +23,7 @@
 
         <div class="governo-pe">
             <div class="logo-ses">
-                <a href="https://portal.saude.pe.gov.br/" target="_blank"><img src="../imagens/logos/brasao-pernambuco.png" alt=""></a>
-                <h5>PERNAMBUCO</h5>
-                <h6>Governo do Estado</h6>
+                <img src="../imagens/logos/GovPERGB.png" alt="">
             </div>
         </div>
+

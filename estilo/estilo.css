@@ -81,11 +81,11 @@ header .logo-lacen img
 header .governo-pe
 {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 100%;
-
+    height: auto;
+    padding: 10px;
     border: 0px solid rgb(115, 255, 0);
     box-sizing: border-box;
 }
@@ -93,21 +93,24 @@ header .logo-ses
 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:flex-start;
     align-items: center;
     border: 0px solid yellow;
-    width: 50%;
+    width: auto;
+    max-width: 40%;
     height: 100%;
     color: rgb(19, 33, 104);
 }
 header .logo-ses img
 {
-    width: 80px;
-    max-width: 100%;
-    height: 90%;
+    width: 100%;
+    max-width: auto;
+    max-height: 60px;
     border: 0px solid red;
+
 }
-header .logo-ses h5
+
+/* header .logo-ses h5
 {
     font-size: 0.9rem;
     font-weight: 900;
@@ -122,6 +125,7 @@ header .logo-ses h6
     text-transform: uppercase;
     letter-spacing: 2.3px;
 }
+    */
 header nav
 {
     display: flex;
@@ -139,12 +143,7 @@ header nav
     border: 0px solid yellow;
 
 }
-header nav .menu-site
-{
-/*    flexx: 1;
-    width: 100px;
-    */
-}
+
 header nav ul
 {
     display: flex;
@@ -167,18 +166,18 @@ header nav ul li a:hover
 header nav .pesquisa-site
 {
     display: flex;
-    flex: 1;
-    width: 40%;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
+    margin-top: 10px;
     border: 0px solid greenyellow;
 
 }
 header nav .pesquisa-site input
 {
-    flex: 12;
+    flex: 1;
     padding: 7px;
-    
     font-size: 0.8rem;
     border-radius: 20px;
 
@@ -186,11 +185,55 @@ header nav .pesquisa-site input
 }
 header nav .pesquisa-site img
 {
-    flex: 1;
+    flex: 0;
     width: 20px;
     height: 20px;
+    margin-left: 10px;
 }
 
+
+
+        /******************     RESPONSIVIDADE     ******************/
+
+        @media (min-width: 1024px) {
+            header .logo-ses img {
+                width: auto; 
+                max-height: 70px; 
+                margin: 0 auto; 
+            }
+        }
+
+        @media (max-width: 868px) {
+            header .logo-ses img {
+                display: none;
+            }
+
+            header nav .pesquisa-site {
+                display: none;
+            }
+
+            header nav .pesquisa-site input {
+                display: none;
+            }
+        }
+
+        @media (max-width: 425px) {
+            header .logo-ses img {
+                display: none;
+            }
+
+            header nav .pesquisa-site {
+                display: none;
+            }
+
+            header nav .pesquisa-site input {
+                display: none;
+        }
+
+        }
+            
+            
+        /******************     RESPONSIVIDADE     ******************/
 
 
 /******************     HEADER     ******************/
@@ -1328,4 +1371,3 @@ main .secao-institucional .titulo-3
 
 
 /******************     TELA MAXIMA 425PX     ******************/
-
