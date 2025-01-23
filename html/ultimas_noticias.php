@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Últimas Notícias</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="../estilo/estilo.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="../src/noticias.js"></script>
 </head>
 <body>
 
@@ -14,29 +18,94 @@
     
     <div class="container">
         
-        <nav class="nav_paginas">
-            <ul>
-                <li>
-                    <a href="index.php"> Home</a>
-                </li>
-                <span class="dir">></span> 
-                <li>
-                    <a href="Index.php"> &Uacute;ltimas Not&iacute;cias </a>
-                </li>
-            </ul>
-        </nav>
-    
-        <div class="pagina_ultimas_noticias">
-            <h1>&Uacute;ltimas Not&iacute;cias</h1>
-
-            <section class="ultimas_noticias">
-                <div class="destaque">
-
-                </div>
-
-                <div class="noticias_anteriores"></div>
-            </section>
-        </div>
+    <section class="banner-sec">
+        <div class="container">
+    <div class="row">
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" alt="">
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Notícia Antiga 1</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/travel.jpg" alt="">
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Notícia Antiga 2</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-3">
+        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/business1.jpg" alt="">
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Notícia Antiga 3</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
+          </div>
+              </div>
+        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/food.jpg" alt="">
+                <div class="card-body">
+            <div class="news-title">
+                    <h2 class=" title-small"><a href="#">Notícia Antiga 4</a></h2>
+                  </div>
+            <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
+          </div>
+              </div>
+      </div>
+            <div class="col-md-6 top-slider">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                
+                <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/politics1.jpg" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="#">Notícia Nova 1</a></h2>
+                      </div>
+                <div class="news-des">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
+                <div class="time-text"><strong>Agora</strong></div>
+                <div></div>
+              </div>
+                  </div>
+            <div class="carousel-item">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/sport1.jpg" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="#">Notícia Nova 2</a></h2>
+                      </div>
+                <div class="news-des">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
+                <div class="time-text"><strong>2h atrás</strong></div>
+                <div></div>
+              </div>
+                  </div>
+            <div class="carousel-item">
+                    <div class="news-block">
+                <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/health.jpg" alt=""></div>
+                <div class="news-title">
+                        <h2 class=" title-large"><a href="#">Notícia Nova 3</a></h2>
+                      </div>
+                <div class="news-des">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
+                <div class="time-text"><strong>2h atrás</strong></div>
+                <div></div>
+              </div>
+                  </div>
+          </div>
+              </div>
+      </div>
+          </div>
+  </div>
+      </section>
+        
     </div>
     <?php
         include "rodape.html";

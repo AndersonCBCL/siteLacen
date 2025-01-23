@@ -181,10 +181,11 @@ header nav .pesquisa-site
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    margin-top: 10px;
+    margin-top: -10px;
     border: 0px solid greenyellow;
 
 }
+
 header nav .pesquisa-site input
 {
     flex: 1;
@@ -194,14 +195,6 @@ header nav .pesquisa-site input
 
     background-color: white;
 }
-header nav .pesquisa-site img
-{
-    flex: 0;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-}
-
 
 
         /******************     RESPONSIVIDADE     ******************/
@@ -717,7 +710,7 @@ main .secao-institucional .titulo-3
 
 /******************     PÁGINA - ÚLTIMAS NOTÍCIAS     ******************/
 
-.pagina_ultimas_noticias
+/*.pagina_ultimas_noticias
 {
     display: flex;
     flex-direction: column;
@@ -755,9 +748,58 @@ main .secao-institucional .titulo-3
     width: 20%;
     height: 60vh;
     background-color: #aaaaaa;
+}*/
+
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #797979;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
 }
 
+.carousel-indicators [data-bs-target] .active {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 3px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #797979;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
 
+.banner-sec {
+    float: left; width:100%;
+    margin-top: 200px;
+}
+.banner-sec .news-block{margin-bottom: 20px}
+.banner-sec .news-block:last-child{margin-bottom: 0px}
+.banner-sec .news-des {margin-bottom: 5px;}
+.banner-sec .title-large{margin: 18px 0 0}
+.banner-sec .time{margin-top: 0px; font-size: 13px;}
+.banner-sec .carousel-control.left, .banner-sec .carousel-control.right{background: none;}
+.banner-sec .card{margin-bottom:20px;}
 
 
 
