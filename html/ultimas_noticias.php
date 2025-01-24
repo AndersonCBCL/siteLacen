@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../estilo/estilo.css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="../src/noticias.js"></script>
 </head>
 <body>
 
@@ -25,7 +24,7 @@
         <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" alt="">
                 <div class="card-body">
             <div class="news-title">
-                    <h2 class=" title-small"><a href="#">Notícia Antiga 1</a></h2>
+                    <h2 class=" title-small" id="openPopup-1">Notícia Antiga 1</h2>
                   </div>
             <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
           </div>
@@ -33,7 +32,7 @@
         <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/travel.jpg" alt="">
                 <div class="card-body">
             <div class="news-title">
-                    <h2 class=" title-small"><a href="#">Notícia Antiga 2</a></h2>
+                    <h2 class=" title-small" id="openPopup-2">Notícia Antiga 2</h2>
                   </div>
             <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
           </div>
@@ -43,7 +42,7 @@
         <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/business1.jpg" alt="">
                 <div class="card-body">
             <div class="news-title">
-                    <h2 class=" title-small"><a href="#">Notícia Antiga 3</a></h2>
+                    <h2 class=" title-small" id="openPopup-3">Notícia Antiga 3</h2>
                   </div>
             <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
           </div>
@@ -51,26 +50,28 @@
         <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/food.jpg" alt="">
                 <div class="card-body">
             <div class="news-title">
-                    <h2 class=" title-small"><a href="#">Notícia Antiga 4</a></h2>
+                    <h2 class=" title-small" id="openPopup-4">Notícia Antiga 4</h2>
                   </div>
             <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
           </div>
               </div>
       </div>
+         <!-- não tirar os botões daqui nem tentar organizar o código, se não para de funcionar -->
             <div class="col-md-6 top-slider">
-                <div id="carouselExampleIndicators" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+          </ol>
                 
                 <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
+            <div class="carousel-item active">
                     <div class="news-block">
                 <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/politics1.jpg" alt=""></div>
                 <div class="news-title">
-                        <h2 class=" title-large"><a href="#">Notícia Nova 1</a></h2>
+                        <h2 class=" title-large" id="openPopup-5">Notícia Nova 1</h2>
                       </div>
                 <div class="news-des">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
                 <div class="time-text"><strong>Agora</strong></div>
@@ -81,7 +82,7 @@
                     <div class="news-block">
                 <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/sport1.jpg" alt=""></div>
                 <div class="news-title">
-                        <h2 class=" title-large"><a href="#">Notícia Nova 2</a></h2>
+                        <h2 class=" title-large" id="openPopup-6">Notícia Nova 2</h2>
                       </div>
                 <div class="news-des">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
                 <div class="time-text"><strong>2h atrás</strong></div>
@@ -92,10 +93,10 @@
                     <div class="news-block">
                 <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/health.jpg" alt=""></div>
                 <div class="news-title">
-                        <h2 class=" title-large"><a href="#">Notícia Nova 3</a></h2>
+                        <h2 class=" title-large" id="openPopup-7">Notícia Nova 3</h2>
                       </div>
                 <div class="news-des">Condimentum ultrices mi est a arcu at cum a elementum per cum turpis dui vulputate vestibulum in vehicula montes vel. Mauris nam suspendisse consectetur mus...</div>
-                <div class="time-text"><strong>2h atrás</strong></div>
+                <div class="time-text"><strong>2h </strong></div>
                 <div></div>
               </div>
                   </div>
@@ -107,8 +108,60 @@
       </section>
         
     </div>
+
+    <div id="popup-1" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-1">&times;</span>
+            <h2>Notícia Antiga 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
+    <div id="popup-2" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-2">&times;</span>
+            <h2>Notícia Antiga 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
+    <div id="popup-3" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-3">&times;</span>
+            <h2>Notícia Antiga 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
+    <div id="popup-4" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-4">&times;</span>
+            <h2>Notícia Antiga 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
+    <div id="popup-5" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-5">&times;</span>
+            <h2>Notícia Nova 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
+    <div id="popup-6" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-6">&times;</span>
+            <h2>Notícia Nova 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
+    <div id="popup-7" class="popup">
+            <div class="popup-conteudo">
+            <span class="fechar" id="closePopup-7">&times;</span>
+            <h2>Notícia Nova 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            </div>
+        </div>
     <?php
         include "rodape.html";
     ?>
+
+    <script src="../src/noticias.js"></script>
 </body>
 </html>
