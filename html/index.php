@@ -66,46 +66,46 @@
                             </a>
                         </div>
                     
-                    <div class="ultimas-noticias-img">
-                        <div id="carouselExampleCaptions" class="carousel slide">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <div class="ultimas-noticias-img">
+                            <div id="carouselExampleCaptions" class="carousel slide">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 455px; height: 275px;">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Primeira Notícia</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imagens/slides/slides-img1.png" alt="..." style="width: 455px; height: 275px;" >
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Segunda Notícia</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 455px; height: 275px;">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Terceira Notícia</h5>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                <img src="../imagens/img-ultimas-noticias.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Primeira Notícia</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quos quae ea excepturi eius dolorum saepe ut non magni aspernatur voluptatem hic possimus omnis, facilis vitae magnam recusandae cum laudantium.</p>
-                                </div>
-                                </div>
-                                <div class="carousel-item">
-                                <img src="../imagens/img-ultimas-noticias.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Segunda Notícia</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam dicta facere, aliquam non rerum maxime delectus odio assumenda voluptas fugiat repellat, molestiae exercitationem sunt quis?</p>
-                                </div>
-                                </div>
-                                <div class="carousel-item">
-                                <img src="../imagens/img-ultimas-noticias.png" class="d-block w-100" alt="...">
-                                <div class="carousel-caption d-none d-md-block">
-                                    <h5>Terceira Notícia</h5>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quibusdam delectus saepe accusamus natus libero autem soluta sit cum, labore impedit, mollitia laboriosam dolore quis quasi!.</p>
-                                </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                            </div>
-                    </div>
+                        </
                 </div>
             </section>
 
