@@ -65,7 +65,9 @@
                             </p>
                             </a>
                         </div>
-                    
+
+
+                    <a href="ultimas_noticias.php">
                         <div class="ultimas-noticias-img">
                             <div id="carouselExampleCaptions" class="carousel slide">
                                 <div class="carousel-indicators">
@@ -105,7 +107,7 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
-                        </
+                    </a>
                 </div>
             </section>
 

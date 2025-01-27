@@ -755,8 +755,8 @@ main .secao-institucional .titulo-3
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    display: none; /* Hidden by default */
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -768,8 +768,10 @@ main .secao-institucional .titulo-3
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     text-align: center;
-    max-width: 400px;
+    max-width: 800px;
+    max-height: 800px;
     width: 90%;
+    height: 90%;
   }
   
   .fechar {
@@ -784,6 +786,18 @@ main .secao-institucional .titulo-3
   .fechar:hover {
     color: #000;
   }
+
+
+.title-large:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.title-small:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 
 /******************     PÁGINA - ÚLTIMAS NOTÍCIAS     ******************/
 
