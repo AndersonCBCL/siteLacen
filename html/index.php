@@ -77,14 +77,14 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 455px; height: 275px;">
+                                        <img src="../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg" alt="..." style="width: 455px; height: 275px;">
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Primeira Notícia</h5>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../imagens/slides/slides-img1.png" alt="..." style="width: 455px; height: 275px;" >
+                                        <img src="../imagens/ultimas-noticias/LACEN (4)-1.jpg" alt="..." style="width: 455px; height: 275px;" >
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Segunda Notícia</h5>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>

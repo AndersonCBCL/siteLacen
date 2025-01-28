@@ -21,7 +21,7 @@
         <div class="container">
     <div class="row">
             <div class="col-md-3">
-        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/politics.jpg" alt="">
+        <div class="card"> <img class="img-fluid" src="" alt="">
                 <div class="card-body">
             <div class="news-title">
                     <h2 class=" title-small" id="openPopup-1">Notícia Antiga 1</h2>
@@ -29,7 +29,7 @@
             <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
           </div>
               </div>
-        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/travel.jpg" alt="">
+        <div class="card"> <img class="img-fluid" src="" alt="">
                 <div class="card-body">
             <div class="news-title">
                     <h2 class=" title-small" id="openPopup-2">Notícia Antiga 2</h2>
@@ -39,7 +39,7 @@
               </div>
       </div>
             <div class="col-md-3">
-        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/business1.jpg" alt="">
+        <div class="card"> <img class="img-fluid" src="" alt="">
                 <div class="card-body">
             <div class="news-title">
                     <h2 class=" title-small" id="openPopup-3">Notícia Antiga 3</h2>
@@ -47,7 +47,7 @@
             <p class="card-text"><small class="text-time"><em>3h atrás</em></small></p>
           </div>
               </div>
-        <div class="card"> <img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/food.jpg" alt="">
+        <div class="card"> <img class="img-fluid" src="" alt="">
                 <div class="card-body">
             <div class="news-title">
                     <h2 class=" title-small" id="openPopup-4">Notícia Antiga 4</h2>
@@ -69,7 +69,7 @@
                 <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                     <div class="news-block">
-                <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/politics1.jpg" alt=""></div>
+                <div class="news-media"><img class="img-fluid" src="../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg" alt="..." style="width: 455px; height: 275px;"></div>
                 <div class="news-title">
                         <h2 class=" title-large" id="openPopup-5">Notícia Nova 1</h2>
                       </div>
@@ -80,7 +80,7 @@
                   </div>
             <div class="carousel-item">
                     <div class="news-block">
-                <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/sport1.jpg" alt=""></div>
+                <div class="news-media"><img class="img-fluid" src="../imagens/ultimas-noticias/LACEN (4)-1.jpg" alt="..." style="width: 455px; height: 275px;"></div>
                 <div class="news-title">
                         <h2 class=" title-large" id="openPopup-6">Notícia Nova 2</h2>
                       </div>
@@ -91,7 +91,7 @@
                   </div>
             <div class="carousel-item">
                     <div class="news-block">
-                <div class="news-media"><img class="img-fluid" src="http://grafreez.com/wp-content/temp_demos/river/img/health.jpg" alt=""></div>
+                <div class="news-media"><img class="img-fluid" src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 455px; height: 275px;" alt=""></div>
                 <div class="news-title">
                         <h2 class=" title-large" id="openPopup-7">Notícia Nova 3</h2>
                       </div>
@@ -141,13 +141,17 @@
             <div class="popup-conteudo">
             <span class="fechar" id="closePopup-5">&times;</span>
             <h2>Notícia Nova 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <img src="../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg" alt="..." style="width: 600px; height: 400px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore distinctio corporis quod rem laborum commodi dolorum cumque tempore, eum exercitationem eaque provident aspernatur nulla incidunt perferendis reiciendis perspiciatis aperiam sapiente!</p>
             </div>
         </div>
     <div id="popup-6" class="popup">
             <div class="popup-conteudo">
             <span class="fechar" id="closePopup-6">&times;</span>
             <h2>Notícia Nova 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="../imagens/ultimas-noticias/LACEN (4)-1.jpg" alt="..." style="width: 600px; height: 400px;" >
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
             </div>
         </div>
@@ -155,6 +159,8 @@
             <div class="popup-conteudo">
             <span class="fechar" id="closePopup-7">&times;</span>
             <h2>Notícia Nova 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 600px; height: 400px;">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vitae itaque, cum veniam provident minus.</p>
             </div>
         </div>
