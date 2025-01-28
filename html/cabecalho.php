@@ -20,11 +20,12 @@
             </ul>
 
             <div class="pesquisa-site">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Procurando algo?" aria-label="Search">
+                <form class="d-flex" role="search" action="https://www.google.com/search" method="get">
+                    <input class="form-control me-3" type="search" name="q" placeholder="Procurando algo?" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
+
 
         </nav>
 
