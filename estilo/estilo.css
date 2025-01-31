@@ -741,11 +741,15 @@ main .secao-institucional .titulo-3
     margin: 5px 0;
     color: #333;
     display: inline-block;
+    justify-content: space-between;
 }
 
 .news-item small {
     color: #777;
     display: block;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 500px;
 }
 
 .pagination {
@@ -773,7 +777,8 @@ main .secao-institucional .titulo-3
 .news-item img {
     width: 200px; 
     height: auto;
-    display:flex  
+    display: inline-block;
+    justify-content:flex-end;
 }
 
 
