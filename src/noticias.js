@@ -1,28 +1,28 @@
 const noticias = [
   { 
-    titulo: "Teste 1", 
-    descricao: "Descrição 1", 
+    titulo: "Teste 1 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
+    descricao: "Descrição 1 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
     data: "30/01/2025", 
-    link: "noticia1.html",
+    link: "../html/index.php",
     imagem: "../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg"
   },
   { 
-    titulo: "Teste 2", 
-    descricao: "Descrição 2", 
+    titulo: "Teste 2 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
+    descricao: "Descrição 2 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
     data: "29/01/2025", 
     link: "noticia2.html", 
     imagem: "../imagens/ultimas-noticias/LACEN (4)-1.jpg"
   },
   { 
-    titulo: "Teste 3", 
-    descricao: "Descrição 3", 
+    titulo: "Teste 3 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
+    descricao: "Descrição 3 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
     data: "30/01/2025", 
     link: "noticia1.html",
     imagem: "../imagens/img-ultimas-noticias.png"
   },
   { 
-    titulo: "Teste 4", 
-    descricao: "Descrição 4", 
+    titulo: "Teste 4 Lorem ipsum dolor sit amet consectetur adispiscing elit", 
+    descricao: "Descrição 4 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
     data: "30/01/2025", 
     link: "noticia1.html",
   },
@@ -73,8 +73,7 @@ const noticias = [
     descricao: "Descrição 12", 
     data: "29/01/2025", 
     link: "noticia2.html" 
-  },
-
+  }
 ];
 
 const noticiasPorPagina = 10;
@@ -95,11 +94,14 @@ function exibirNoticias() {
       const imagemHTML = noticia.imagem ? `<img src="${noticia.imagem}" alt="Imagem da notícia">` : "";
 
       div.innerHTML = `
-          <h2><a href="${noticia.link}" target="_blank">${noticia.titulo}</a></h2>
-          <p>${noticia.descricao}</p>
-          <small>${noticia.data}</small>
-          ${imagemHTML}
+          ${imagemHTML} 
+          <div class="news-text">
+              <h2><a href="${noticia.link}" target="_blank">${noticia.titulo}</a></h2>
+              <p>${noticia.descricao}</p>
+              <small>${noticia.data}</small>
+          </div>
       `;
+
       container.appendChild(div);
   });
 
@@ -117,7 +119,7 @@ function atualizarPaginacao() {
       link.innerText = i;
       link.className = i === paginaAtual ? "active" : "";
       link.onclick = function (event) {
-          event.preventDefault(); // Evita o recarregamento da página ao clicar
+          event.preventDefault();
           paginaAtual = i;
           exibirNoticias();
       };

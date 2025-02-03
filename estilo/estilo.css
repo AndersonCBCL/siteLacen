@@ -727,8 +727,24 @@ main .secao-institucional .titulo-3
 }
 
 .news-item {
+    display: flex;
+    align-items: flex-start; 
     border-bottom: 1px solid #ddd; 
     padding: 15px 0;
+    gap: 15px; 
+}
+
+.news-item img {
+    width: 200px; 
+    height: auto;
+    flex-shrink: 0; 
+}
+
+.news-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
 }
 
 .news-item h2 {
@@ -738,18 +754,13 @@ main .secao-institucional .titulo-3
 }
 
 .news-item p {
-    margin: 5px 0;
+    margin: 0;
     color: #333;
-    display: inline-block;
-    justify-content: space-between;
 }
 
 .news-item small {
     color: #777;
-    display: block;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    margin-right: 500px;
+    font-size: 0.9em;
 }
 
 .pagination {
@@ -772,14 +783,6 @@ main .secao-institucional .titulo-3
     font-weight: bold;
 }
 
-
-
-.news-item img {
-    width: 200px; 
-    height: auto;
-    display: inline-block;
-    justify-content:flex-end;
-}
 
 
 /******************     PÁGINA - ÚLTIMAS NOTÍCIAS     ******************/
