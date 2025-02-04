@@ -3,7 +3,7 @@ const noticias = [
     titulo: "Teste 1 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
     descricao: "Descrição 1 Lorem ipsum dolor sit amet conscectur adispiscing elit", 
     data: "30/01/2025", 
-    link: "../html/index.php",
+    link: "../html/noticia_1.php",
     imagem: "../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg"
   },
   { 
@@ -96,7 +96,7 @@ function exibirNoticias() {
       div.innerHTML = `
           ${imagemHTML} 
           <div class="news-text">
-              <h2><a href="${noticia.link}" target="_blank">${noticia.titulo}</a></h2>
+              <h2><a href="${noticia.link}" ">${noticia.titulo}</a></h2>
               <p>${noticia.descricao}</p>
               <small>${noticia.data}</small>
           </div>

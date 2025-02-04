@@ -801,8 +801,44 @@ main .secao-institucional .titulo-3
 
 
 
+
+
 /******************     PÁGINA - ÚLTIMAS NOTÍCIAS     ******************/
 
+
+
+
+
+/******************     PÁGINA - NOTÍCIAS     ******************/
+
+.column-middle {
+margin-top: 50px;
+margin-bottom: 100px;
+margin-left: 150px;
+margin-right: 150px;
+display: grid;
+place-items: center;
+}
+
+.column-middle img {
+    width: 600px;
+    height: auto;
+}
+
+.column-middle p {
+    text-align: center;
+    justify-content: center;
+}
+
+.column-middle figcaption {
+	opacity: 0.5;
+	font-style: italic;
+}
+
+
+
+
+/******************     PÁGINA - NOTÍCIAS     ******************/
 
 
 
