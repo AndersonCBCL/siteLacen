@@ -522,6 +522,22 @@ footer .logo-lacen img
     width: 60%;
 }
 
+.social-media {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: self;
+} 
+
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+.social-media a:hover {
+    color: #1da1f2;
+}
 
 /******************     FOOTER     ******************/
 
@@ -749,7 +765,7 @@ main .secao-institucional .titulo-3
 
 .news-item h2 {
     margin: 0;
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #007bff;
 }
 
@@ -1400,6 +1416,8 @@ main .secao-institucional .titulo-3
         font-size: 0.8rem;
         text-align: center;
     }
+    
+  
 }
 
 
