@@ -525,11 +525,11 @@ footer .logo-lacen img
 .social-media {
     margin-top: 10px;
     margin-bottom: 20px;
-    justify-content: self;
 } 
 
 
 .social-media a {
+    padding: 10px;
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
@@ -659,7 +659,7 @@ main .secao-institucional .titulo-3
 {
     display: grid;
     grid-template-columns: 200px 400px 100px 500px;
- /*   grid-template-areas: 
+/*   grid-template-areas: 
         'area area area area'
         'contato contato contato contato'
         'telefone telefone telefone telefone'
@@ -831,8 +831,8 @@ place-items: center;
 }
 
 .column-middle figcaption {
-	opacity: 0.5;
-	font-style: italic;
+    opacity: 0.5;
+    font-style: italic;
 }
 
 
@@ -1453,7 +1453,7 @@ place-items: center;
         text-align: center;
     }
     
-  
+
 }
 
 
