@@ -34,14 +34,14 @@
             
                 <article class="column-middle">
                     <h1>Texto de Exemplo</h1>
+                    <p>
+                        Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent etiam curae justo accumsan nascetur phasellus pellentesque. Id lorem rhoncus sem ornare cras. Enim accumsan senectus lectus pretium ligula sociosqu tristique faucibus. Ridiculus nullam maecenas, elementum congue nulla penatibus. Bibendum hendrerit class vehicula ipsum urna.
+                    </p>
+                    <span>Data/Data/2025</span>
                     <figure>
                         <img src="../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg" />
                         <figcaption>Non nam per accumsan venenatis senectus rhoncus suspendisse.</figcaption>
                     </figure>
-                    <span>Data/Data/2025</span>
-                    <p>
-                        Lorem ipsum odor amet, consectetuer adipiscing elit. Aptent etiam curae justo accumsan nascetur phasellus pellentesque. Id lorem rhoncus sem ornare cras. Enim accumsan senectus lectus pretium ligula sociosqu tristique faucibus. Ridiculus nullam maecenas, elementum congue nulla penatibus. Bibendum hendrerit class vehicula ipsum urna.
-                    </p>
                     <p>
                         Neque nisi ex imperdiet integer maximus vivamus varius imperdiet. Torquent laoreet fames erat nulla primis. Sed dis sed est ut morbi feugiat nisi. Condimentum id pharetra ipsum ornare tortor a. Urna magna nulla augue massa ipsum venenatis. Nec odio interdum montes venenatis rutrum facilisis phasellus sagittis. Imperdiet fringilla porttitor nisl litora; libero orci aliquet maximus. Dolor nam nulla eget mattis quam sapien eleifend elit metus. Aliquam ipsum fames himenaeos blandit sit faucibus litora gravida.
                     </p>

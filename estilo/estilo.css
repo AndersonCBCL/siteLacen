@@ -410,6 +410,7 @@ main .secao-informacoes .rightside .ultimas-noticias-img img {
     border-radius: 5%;
 }
 
+
 /******************     MAIN - INFORMACOES     ******************/
 
 
@@ -826,7 +827,7 @@ place-items: center;
 }
 
 .column-middle p {
-    text-align: center;
+    text-align: left;
     justify-content: center;
 }
 
