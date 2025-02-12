@@ -20,22 +20,46 @@
                 </li>
                 <span class="dir">></span> 
                 <li>
-                    <a href="Index.php"> &Uacute;ltimas Not&iacute;cias </a>
+                    &Uacute;ltimas Not&iacute;cias
                 </li>
             </ul>
         </nav>
     
+       
+
         <div class="pagina_ultimas_noticias">
             <h1>&Uacute;ltimas Not&iacute;cias</h1>
             <section class="ultimas_noticias">
-                <div class="destaque">
+                <div  class="destaque" id="destaque">
+                <script>
+                        function carregarPagina(arquivoNoticia) {
+                            fetch(arquivoNoticia)
+                                .then(response => {
+                                    if (!response.ok) {
+                                        throw new Error("Erro ao carregar a página: " + response.status);
+                                    }
+                                    return response.text();
+                                })
+                                .then(data => {
+                                    document.getElementById("destaque").innerHTML = data;
+                                })
+                                .catch(error => console.error(error));
+                        }
+                </script>
+
                 </div>
-                <div class="noticias_anteriores"></div>
+                <div class="noticias_anteriores">
+                    <div class="news-container" id="newsContainer"></div>
+                    <div class="pagination" id="pagination"></div>
+                </div>
             </section>
         </div>
+        
+        <script>
 
-        <div class="news-container" id="newsContainer"></div>
-        <div class="pagination" id="pagination"></div>
+
+        </script>
+
         <script src="../src/noticias.js"></script>
     </div>
     <?php
