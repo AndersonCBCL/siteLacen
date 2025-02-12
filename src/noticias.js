@@ -20,7 +20,6 @@ function exibirNoticias() {
             ${imagemHTML} 
             <div class="news-text">
                  <h2><a class="news-title" onClick="carregarPagina('${noticia.link}')">${noticia.titulo}</a></h2>
-                <p>${noticia.descricao}</p>
                 <small>${noticia.data}</small>
             </div>
         `;
@@ -34,7 +33,7 @@ function exibirNoticias() {
 const noticias = [
     { titulo: "Teste 1 Lorem ipsum dolor sit amet conscectur adispiscing elit", descricao: "Descrição 1 Lorem ipsum dolor sit amet conscectur adispiscing elit", data: "30/01/2025", imagem: "../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg", link:"noticia_1.php" },
     { titulo: "Teste 2 Lorem ipsum dolor sit amet conscectur adispiscing elit", descricao: "Descrição 2 Lorem ipsum dolor sit amet conscectur adispiscing elit", data: "29/01/2025", imagem: "../imagens/ultimas-noticias/LACEN (4)-1.jpg", link:"noticia_2.php" },
-    { titulo: "Teste 3 Lorem ipsum dolor sit amet conscectur adispiscing elit", descricao: "Descrição 3 Lorem ipsum dolor sit amet conscectur adispiscing elit", data: "30/01/2025", imagem: "", link:"noticia_3.php" },
+    { titulo: "Teste 3 Lorem ipsum dolor sit amet conscectur adispiscing elit", descricao: "Descrição 3 Lorem ipsum dolor sit amet conscectur adispiscing elit", data: "30/01/2025", imagem: "../imagens/img-ultimas-noticias.png", link:"noticia_3.php" },
     { titulo: "Teste 4 Lorem ipsum dolor sit amet consectetur adispiscing elit", descricao: "Descrição 4 Lorem ipsum dolor sit amet conscectur adispiscing elit", data: "30/01/2025", link:"noticia_4.php" },
 ];
 
