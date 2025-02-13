@@ -849,7 +849,7 @@ main .secao-institucional .titulo-3
     flex-shrink: 0; 
 }
 
-.news-title {
+.news-text h2 {
     cursor: pointer;
 }
 
@@ -863,7 +863,7 @@ main .secao-institucional .titulo-3
 .news-item h2 {
     margin: 0;
     font-size: 1.0em;
-    color: #007bff;
+    color: #007bff;  
 }
 
 .news-item p {
@@ -906,8 +906,6 @@ main .secao-institucional .titulo-3
     font-weight: bold;
 }
  
-
-
 
 
 
