@@ -6,7 +6,7 @@
     <title>LACEN-PE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilo/estilo.css">
-    <link href="'https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap"
+    <link href="'https://fonts.googleapis.com/css2?family=Calistoga&family=Inter:wght@100..900&display=swap">
 </head>
 
 <body>
@@ -39,9 +39,14 @@
                 <div class="leftside">
                     <h1 class="titulo">Informações</h1>
                     <div class="links-info">
-                        <a href="" class="btn-link-info">
+                        <!--<a href="/./site/arquivos/qualidade/manual_de_coleta___05_edicao_final.pdf" class="btn-link-info" target="_blank">
+                            Manual de Coleta
+                        </a>-->
+                        <a href="gaqple/manual_coleta.php" class="btn-link-info">
                             Manual de Coleta
                         </a>
+                        <!--<embed src="/./site/arquivos/qualidade/manual_de_coleta___05_edicao_final.pdf" width="100%" height="600px" />
+                        <iframe src="/./site/arquivos/qualidade/manual_de_coleta___05_edicao_final.pdf" width="100%" height="600px"></iframe>-->
                         <a href="exames_ofertados.php" class="btn-link-info">
                             Exames Ofertados
                         </a>
@@ -50,6 +55,9 @@
                         </a>
                         <a href="" class="btn-link-info">
                             Notas Técnicas e Informativos
+                        </a>
+                        <a href="gvldttn/formularios_fichas_lista.php" class="btn-link-info">
+                            Fichas e Formul&aacute;rios
                         </a>
                     </div>
                 </div>
@@ -77,21 +85,21 @@
                                 </div>
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg" alt="..." style="width: 455px; height: 275px;">
+                                        <a href="ultimas_noticias.php#noticia_1"><img src="../imagens/ultimas-noticias/WhatsApp-Image-2020-08-28-at-15.07.13.jpeg" alt="..." style="width: 455px; height: 275px;"></a>
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Primeira Notícia</h5>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../imagens/ultimas-noticias/LACEN (4)-1.jpg" alt="..." style="width: 455px; height: 275px;" >
+                                        <a href="ultimas_noticias.php#noticia_2"><img src="../imagens/ultimas-noticias/LACEN (4)-1.jpg" alt="..." style="width: 455px; height: 275px;" ></a>
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Segunda Notícia</h5>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 455px; height: 275px;">
+                                        <a href="ultimas_noticias.php#noticia_3"><img  src="../imagens/img-ultimas-noticias.png" alt="..." style="width: 455px; height: 275px;"></a>
                                         <div class="carousel-caption d-none d-md-block">
                                             <h5>Terceira Notícia</h5>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -114,8 +122,8 @@
             <section class="secao-servicos">
                 <h1 class="titulo">Serviços</h1>
                 <div class="links-servicos">
-                    <a href="" class="btn-link-servico">
-                        Rede Pernambucana de Laboratórios - RPELAB
+                    <a href="gaqple.php" class="btn-link-servico">
+                        Gestão da Qualidade
                     </a>
                     <a href="" class="btn-link-servico">
                         Recepção Biológica

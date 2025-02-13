@@ -31,6 +31,7 @@
             <h1>&Uacute;ltimas Not&iacute;cias</h1>
             <section class="ultimas_noticias">
                 <div  class="destaque" id="destaque">
+
                 <script>
                         function carregarPagina(arquivoNoticia) {
                             fetch(arquivoNoticia)
@@ -44,7 +45,13 @@
                                     document.getElementById("destaque").innerHTML = data;
                                 })
                                 .catch(error => console.error(error));
-                        }
+
+                            };
+
+                                window.addEventListener('load', () => {
+                                 const hash = window.location.hash.substring(1);
+                                 hash && carregarPagina (`${hash}.php`);
+                                });
                 </script>
 
                 </div>
@@ -54,11 +61,7 @@
                 </div>
             </section>
         </div>
-        
-        <script>
 
-
-        </script>
 
         <script src="../src/noticias.js"></script>
     </div>
