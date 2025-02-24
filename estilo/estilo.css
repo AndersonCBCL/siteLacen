@@ -812,7 +812,7 @@ main .secao-institucional .titulo-3
 }
 .destaque img
 {
-    width: 80%;
+    width: 600px;
 }
 .destaque article span
 {
@@ -1564,7 +1564,7 @@ flex-direction: row;
 justify-content: center;
 align-items: center;
 margin-bottom: 30px;
-width: 70%;
+width: 100%;
 border: 0px solid magenta;
 }
 .organograma_nivel_2_a
@@ -1584,7 +1584,7 @@ flex-direction: row;
 justify-content: space-around;
 align-items: flex-start;
 margin-bottom: 30px;
-width: 70%;
+width: 100%;
 color: #282828;
 }
 .box-nivel1
