@@ -1,0 +1,2015 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List
+href="Para%20configurar%20um%20servidor%20com%20RAID%206_arquivos/filelist.xml">
+<link rel=Edit-Time-Data
+href="Para%20configurar%20um%20servidor%20com%20RAID%206_arquivos/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Elmano Marques</o:Author>
+  <o:LastAuthor>Elmano Marques</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>168</o:TotalTime>
+  <o:Created>2025-02-17T19:36:00Z</o:Created>
+  <o:LastSaved>2025-02-17T19:36:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>2313</o:Words>
+  <o:Characters>12493</o:Characters>
+  <o:Lines>104</o:Lines>
+  <o:Paragraphs>29</o:Paragraphs>
+  <o:CharactersWithSpaces>14777</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData
+href="Para%20configurar%20um%20servidor%20com%20RAID%206_arquivos/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Para%20configurar%20um%20servidor%20com%20RAID%206_arquivos/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>PT-BR</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="--"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073732485 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 3 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 4 Char";
+	mso-style-next:Normal;
+	margin-top:10.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	mso-fareast-language:EN-US;
+	font-weight:bold;
+	font-style:italic;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Texto de balão Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-fareast-language:EN-US;}
+span.Ttulo3Char
+	{mso-style-name:"Título 3 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 3";
+	mso-ansi-font-size:13.5pt;
+	mso-bidi-font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-fareast-language:PT-BR;
+	font-weight:bold;}
+span.Ttulo4Char
+	{mso-style-name:"Título 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 4";
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	font-weight:bold;
+	font-style:italic;}
+span.TextodebaloChar
+	{mso-style-name:"Texto de balão Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Texto de balão";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:10.0pt;
+	line-height:115%;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:8877222;
+	mso-list-template-ids:-1739832372;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:209995338;
+	mso-list-template-ids:-1558295110;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l2
+	{mso-list-id:267467882;
+	mso-list-template-ids:-964497972;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:350184323;
+	mso-list-template-ids:-935660386;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:361135064;
+	mso-list-template-ids:-865728832;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l5
+	{mso-list-id:437061840;
+	mso-list-template-ids:-1415918954;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:465974184;
+	mso-list-template-ids:-445761220;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:494029909;
+	mso-list-template-ids:-279948916;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l8
+	{mso-list-id:496965386;
+	mso-list-template-ids:641475338;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l8:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l9
+	{mso-list-id:811092870;
+	mso-list-template-ids:615651268;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:966162241;
+	mso-list-template-ids:-2050197314;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l10:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l11
+	{mso-list-id:1146237561;
+	mso-list-template-ids:304139490;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l12
+	{mso-list-id:1186793826;
+	mso-list-template-ids:801121378;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l13
+	{mso-list-id:1188635712;
+	mso-list-template-ids:-1398114798;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l13:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l14
+	{mso-list-id:1237667568;
+	mso-list-template-ids:294578590;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l15
+	{mso-list-id:1271619696;
+	mso-list-template-ids:-675937734;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l15:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l16
+	{mso-list-id:1293558827;
+	mso-list-template-ids:2116962330;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l16:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l17
+	{mso-list-id:1470436399;
+	mso-list-template-ids:-276687278;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l17:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l18
+	{mso-list-id:1502425836;
+	mso-list-template-ids:1733060724;}
+@list l18:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l18:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l19
+	{mso-list-id:1586264432;
+	mso-list-template-ids:119810240;}
+@list l19:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l20
+	{mso-list-id:1848515176;
+	mso-list-template-ids:1734514460;}
+@list l20:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l20:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l21
+	{mso-list-id:2122331972;
+	mso-list-template-ids:-182653770;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l21:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l22
+	{mso-list-id:2127462373;
+	mso-list-template-ids:-1377520418;}
+@list l22:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l23
+	{mso-list-id:2130388887;
+	mso-list-template-ids:494304768;}
+@list l23:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabela normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=PT-BR style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;text-align:center;line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR;mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Imagem_x0020_0" o:spid="_x0000_i1025" type="#_x0000_t75"
+ alt="lacen-img1.jpg" style='width:200.25pt;height:141.75pt;visibility:visible;
+ mso-wrap-style:square'>
+ <v:imagedata src="Para%20configurar%20um%20servidor%20com%20RAID%206_arquivos/image001.jpg"
+  o:title="lacen-img1"/>
+</v:shape><![endif]--><![if !vml]><img width=267 height=189
+src="Para%20configurar%20um%20servidor%20com%20RAID%206_arquivos/image001.jpg"
+alt=lacen-img1.jpg v:shapes="Imagem_x0020_0"><![endif]></span><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:PT-BR'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Para
+configurar um servidor com RAID 6+0 (também conhecido como RAID 60), que
+combine as vantagens do RAID 6 e RAID 0, oferecendo boa redundância e
+desempenho, além de suportar virtualização de pelo menos 6 máquinas virtuais
+com 12GB de RAM cada, podemos sugerir um modelo que atenda a essas
+necessidades.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Aqui está
+uma especificação recomendada para o servidor:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:20.0pt;
+mso-bidi-font-size:13.5pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";color:#0066FF;mso-fareast-language:PT-BR'>1. Processador
+(CPU)<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l7 level1 lfo1;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <b>Intel Xeon Silver 4316</b>
+     ou <b>AMD EPYC 7232P</b> (dependendo da sua preferência por Intel ou AMD).
+     <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l7 level2 lfo1;tab-stops:list 72.0pt'><b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Núcleos</span></b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>: 16 núcleos (ou mais) com
+      suporte a Hyper-Threading.<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l7 level2 lfo1;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Isso garantirá que o
+      servidor tenha desempenho suficiente para suportar múltiplas VMs
+      (máquinas virtuais).<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>2. Memória RAM<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l20 level1 lfo2;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Capacidade recomendada</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <b>128GB DDR4 ECC
+     (Error-Correcting Code)</b>. <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l20 level2 lfo2;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Considerando que você
+      precisa de 12GB de RAM por máquina virtual e a necessidade de deixar
+      recursos suficientes para o próprio sistema operacional, uma memória
+      total de 128GB deve ser suficiente para o uso de 6 VMs, além da
+      sobrecarga do host.<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l20 level2 lfo2;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>A tecnologia ECC é
+      preferível em servidores, pois ela corrige automaticamente erros de
+      memória, oferecendo mais estabilidade para ambientes críticos.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>3. Armazenamento (RAID 6+0)<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l16 level1 lfo3;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Discos SSD</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l16 level2 lfo3;tab-stops:list 72.0pt'><b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>: SSDs de <b>1,92TB</b> com
+      boa durabilidade e desempenho, como o <b>Samsung PM1733</b> (NVMe, PCIe
+      Gen4), ou o <b>Intel SSD DC P4510</b> (dependendo da disponibilidade).<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l16 level2 lfo3;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>São necessários <b>4
+      conjuntos</b> de <b>3 discos SSD de 1,92TB cada</b>, com RAID 6+0, para
+      garantir o desempenho e redundância.<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l16 level2 lfo3;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Cada conjunto terá <b>3
+      discos SSD de 1,92TB</b>. O RAID 6 permite que até dois discos falhem por
+      conjunto sem perder dados, enquanto o RAID 0 traz alta performance ao
+      distribuir os dados entre os discos. O espaço útil será 1,92TB x 2 (de
+      cada conjunto de 3 discos), já que RAID 6 utiliza 2 discos para
+      redundância.<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l16 level2 lfo3;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>A capacidade total útil
+      seria de <b>15,36TB</b>.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>4. Controladora RAID<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l12 level1 lfo4;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <b>LSI MegaRAID 9460-16i</b>
+     ou <b>Broadcom 9361-8i</b>, que oferecem suporte a RAID 6 e RAID 0. É
+     importante escolher uma controladora RAID com boas opções de cache e que
+     tenha suporte a SSDs para otimizar o desempenho.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>5. Placa-mãe<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l1 level1 lfo5;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Uma placa-mãe para
+     servidores, como a <b>Supermicro X11SPi-T</b>, que é compatível com os
+     processadores Intel Xeon ou a <b>ASRock Rack EPYCD8-2T</b> para
+     processadores AMD EPYC. <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l1 level2 lfo5;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>As placas-mãe devem ter
+      suporte a RAID e várias opções de conectividade para os SSDs, além de
+      serem projetadas para alta confiabilidade e estabilidade.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>6. Fonte de Alimentação<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l4 level1 lfo6;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Fonte de alimentação
+     redundante de <b>800W a 1000W</b> com certificação 80 PLUS Platinum ou
+     Titanium, como a <b>Corsair RM1000x</b> ou similar. <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l4 level2 lfo6;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>A redundância de fontes é
+      importante em servidores para garantir disponibilidade.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>7. Refrigeração<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l8 level1 lfo7;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Como o servidor deve estar
+     em operação constante, é essencial ter um sistema de resfriamento
+     adequado. <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l8 level2 lfo7;tab-stops:list 72.0pt'><b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Refrigeração interna</span></b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>: Ventiladores silenciosos
+      e eficientes. Certifique-se de que a caixa do servidor permita um fluxo
+      de ar adequado.<o:p></o:p></span></li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l8 level2 lfo7;tab-stops:list 72.0pt'><b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Placa-mãe e CPU</span></b><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>: Verifique se a placa-mãe
+      e o processador vêm com soluções de refrigeração eficientes. Caso
+      contrário, adicione um cooler adicional.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>8. Placa de Rede (NIC)<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l17 level1 lfo8;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <b>Dual-Port 10GbE</b> (10
+     Gbps) ou <b>Dual-Port 25GbE</b>, dependendo da largura de banda necessária
+     para a virtualização e transferência de dados. <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l17 level2 lfo8;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Para um bom desempenho de
+      rede e alta conectividade, uma placa de 10GbE ou 25GbE é recomendada.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>9. Software de Virtualização<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l13 level1 lfo9;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Hypervisor recomendado</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <b>VMware ESXi</b>, <b>Microsoft
+     Hyper-V</b> ou <b>Proxmox</b> (dependendo da preferência). <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l13 level2 lfo9;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Com 128GB de RAM, o
+      servidor pode facilmente hospedar 6 máquinas virtuais com 12GB de RAM
+      cada (totalizando 72GB de RAM para as VMs).<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>10. Sistema Operacional<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l21 level1 lfo10;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Modelo sugerido</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: <b>Windows Server 2022</b>
+     ou a versão mais recente. <o:p></o:p></span></li>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l21 level2 lfo10;tab-stops:list 72.0pt'><span
+      style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+      "Times New Roman";mso-fareast-language:PT-BR'>Para as VMs, você pode usar
+      o <b>Windows Server</b> ou outro sistema operacional que se adapte ao seu
+      ambiente.<o:p></o:p></span></li>
+ </ul>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>Especificações Resumidas:<o:p></o:p></span></b></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Processador</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Intel Xeon Silver 4316 ou
+     AMD EPYC 7232P (16 núcleos)<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Memória RAM</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: 128GB DDR4 ECC<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Armazenamento</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: 4 conjuntos RAID 6+0 com 3
+     SSDs de 1,92TB (total útil de 15,36TB)<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Controladora RAID</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: LSI MegaRAID 9460-16i ou
+     Broadcom 9361-8i<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Fonte</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: 800W a 1000W, redundante<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Placa de Rede</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Dual-Port 10GbE ou 25GbE<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Software de Virtualização</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: VMware ESXi, Hyper-V ou
+     Proxmox<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l19 level1 lfo11;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Sistema Operacional</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Windows Server 2022 (ou
+     versão mais recente)<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Esse
+servidor deverá ser mais que suficiente para virtualizar 6 máquinas virtuais
+com Windows Server, com a configuração de discos SSD para garantir alta
+performance e redundância.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Se precisar
+de mais detalhes ou ajustes na configuração, posso ajudar com mais informações.<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Para um
+servidor com RAID 6+0 (RAID 60), a configuração pode ser feita de duas maneiras
+principais: <b>por hardware</b>, utilizando uma <b>placa controladora RAID dedicada</b>,
+ou <b>por software</b>, utilizando um sistema operacional (como o Windows
+Server ou Linux) para gerenciar o RAID. Vamos analisar as vantagens e
+desvantagens de cada abordagem para determinar qual seria a melhor solução para
+o seu caso:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>1. RAID 60 por Controladora RAID (Hardware)<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Vantagens</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:PT-BR'>:<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l0 level1 lfo12;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Desempenho melhor</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: As controladoras RAID
+     dedicadas são projetadas para gerenciar RAID com alta eficiência. Elas têm
+     <b>processadores dedicados</b> e <b>memória cache</b>, o que pode
+     proporcionar um desempenho superior, especialmente em sistemas com
+     múltiplos discos, como no seu caso, com 12 discos SSD.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l0 level1 lfo12;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Menos impacto no CPU do
+     servidor</span></b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+     mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>:
+     Como a controladora RAID cuida de todo o gerenciamento do RAID, a carga no
+     processador do servidor é significativamente reduzida. Isso libera
+     recursos da CPU para outras tarefas, como a execução das VMs.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l0 level1 lfo12;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Segurança e confiabilidade</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Controladoras RAID
+     dedicadas geralmente possuem recursos avançados, como <b>bateria de backup
+     para cache</b> (BBU), que preserva os dados temporários em caso de falha
+     de energia.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l0 level1 lfo12;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Facilidade de gerenciamento</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: A maioria das
+     controladoras RAID de nível empresarial oferece uma interface de
+     gerenciamento intuitiva para configurar e monitorar o RAID, além de
+     alertas e diagnósticos em tempo real.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Desvantagens</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:PT-BR'>:<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l9 level1 lfo13;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Custo adicional</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Controladoras RAID
+     dedicadas, como a LSI MegaRAID ou Broadcom, podem ter um custo adicional
+     significativo, especialmente se forem modelos com cache avançado e
+     funcionalidades extras.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>2. RAID 60 por Software<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Vantagens</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:PT-BR'>:<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Custo menor</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Utilizar o RAID por
+     software pode ser mais barato, já que não há a necessidade de investir em
+     uma controladora RAID dedicada.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Flexibilidade</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: O RAID por software
+     oferece maior flexibilidade, pois é mais fácil adicionar, remover ou
+     modificar configurações no software sem depender de hardware específico.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l2 level1 lfo14;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Sem dependência de hardware</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Não existe o risco de
+     falha de hardware com a controladora RAID, como pode ocorrer com as
+     controladoras físicas, que eventualmente podem ter falhas.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Desvantagens</span></b><span
+style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+"Times New Roman";mso-fareast-language:PT-BR'>:<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l6 level1 lfo15;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Desempenho inferior</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: O RAID por software
+     depende do processador do servidor para gerenciar as operações de RAID.
+     Isso pode ser um problema em sistemas com muitos discos e alta carga, como
+     é o caso da sua configuração com 12 SSDs. O impacto no desempenho é
+     particularmente relevante se o servidor estiver executando várias máquinas
+     virtuais, já que o CPU será sobrecarregado com o processamento do RAID e
+     das VMs.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l6 level1 lfo15;tab-stops:list 36.0pt'><b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Uso de recursos da CPU</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>: Como mencionado, o RAID
+     por software utiliza o poder de processamento do servidor, o que pode afetar
+     o desempenho geral, especialmente em ambientes de virtualização pesados.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>3. Combinação de RAID por Hardware e Software<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Algumas
+soluções de RAID combinam as duas abordagens. Por exemplo:<o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l22 level1 lfo16;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Você pode usar uma
+     controladora RAID para criar o RAID 6+0, mas permitir que o sistema
+     operacional (como o Windows Server) gerencie a alocação de discos, o que
+     proporciona <b>maior flexibilidade</b>.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l22 level1 lfo16;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Em geral, as controladoras
+     RAID dedicadas permitem que o sistema operacional utilize recursos
+     adicionais de RAID, como volumes virtuais, sem a necessidade de fazer todo
+     o processamento via CPU.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>Qual é a melhor opção para o seu caso?<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>RAID 60
+por placa controladora RAID</span></b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";mso-fareast-language:
+PT-BR'> (hardware) é, na maioria dos casos, a <b>melhor escolha</b>,
+especialmente para servidores que irão hospedar múltiplas máquinas virtuais com
+alta demanda de I/O (entrada e saída de dados), como o seu cenário. A
+controladora RAID dedicada vai liberar a CPU para as máquinas virtuais,
+garantindo melhor desempenho e menor risco de sobrecarga no servidor.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><b><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Quando
+usar RAID por software?</span></b><span style='font-size:12.0pt;font-family:
+"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";mso-fareast-language:
+PT-BR'><o:p></o:p></span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l3 level1 lfo17;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>Se o orçamento for um fator
+     importante e o desempenho não for crítico, você pode considerar o RAID por
+     software, mas esteja ciente de que isso pode afetar a performance,
+     especialmente em ambientes com múltiplas VMs.<o:p></o:p></span></li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l3 level1 lfo17;tab-stops:list 36.0pt'><span
+     style='font-size:12.0pt;font-family:"Times New Roman","serif";mso-fareast-font-family:
+     "Times New Roman";mso-fareast-language:PT-BR'>RAID por software é mais
+     adequado para ambientes com menor exigência de I/O ou para servidores de
+     teste/baixo desempenho.<o:p></o:p></span></li>
+</ul>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal;mso-outline-level:3'><b><span style='font-size:13.5pt;
+font-family:"Times New Roman","serif";mso-fareast-font-family:"Times New Roman";
+mso-fareast-language:PT-BR'>Conclusão:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Se você
+está buscando a <b>máxima performance, estabilidade e escalabilidade</b> para
+um ambiente de virtualização com 6 VMs, o <b>RAID 6+0 (RAID 60) por controladora
+RAID</b> dedicada será a melhor escolha. Ele proporcionará a segurança e o
+desempenho necessário para suportar a carga do servidor, com menor impacto nos
+recursos de CPU.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman","serif";
+mso-fareast-font-family:"Times New Roman";mso-fareast-language:PT-BR'>Se
+precisar de mais detalhes ou tiver outras dúvidas, estou à disposição!<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p>Para a configuração que você está planejando, com <strong>RAID 6+0</strong>,
+<strong>12 SSDs</strong>, e múltiplas máquinas virtuais, é essencial escolher
+um <strong>gabinete de servidor</strong> que ofereça <strong>boa ventilação,
+escalabilidade e suporte adequado para todos os componentes</strong>,
+especialmente os discos SSD e a controladora RAID. Além disso, o gabinete
+precisa ser compatível com a placa-mãe, ter espaço para os discos e permitir um
+bom fluxo de ar para manter o sistema refrigerado.</p>
+
+<p>Aqui estão os aspectos-chave a considerar ao escolher o gabinete ideal para
+essa configuração:</p>
+
+<h3><strong>1. Tipo de Gabinete: Rackmount vs Tower</strong></h3>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l10 level1 lfo18;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><strong>Rackmount (19” 1U, 2U, 3U, etc.)</strong>:</p>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'>Para
+      servidores de maior densidade e racks de data centers, o <strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Rackmount</span></strong> é uma escolha
+      popular. Ele oferece fácil montagem e organização, além de permitir maior
+      controle de cabos e a maximização do uso de espaço.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>2U</span></strong> ou <strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>3U</span></strong> seria uma boa escolha
+      para garantir espaço suficiente para discos SSD e outros componentes,
+      além de proporcionar uma melhor ventilação.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Vantagens</span></strong>: Design
+      compacto, facilmente montável em racks, eficiente para ambientes de data
+      center.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Desvantagens</span></strong>: Pode ser um
+      pouco mais caro, e o espaço interno pode ser mais apertado para expansão,
+      dependendo do modelo.</li>
+ </ul>
+</ul>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l10 level1 lfo18;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><strong>Tower (Desktop)</strong>:</p>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Gabinete Tower</span></strong> é uma boa
+      opção se você não precisar montar o servidor em um rack e preferir um
+      sistema mais flexível. Eles oferecem maior espaço interno e podem ser
+      mais fáceis de montar e gerenciar.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Vantagens</span></strong>: Maior
+      flexibilidade, fácil acesso aos componentes, excelente para expansões
+      futuras.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l10 level2 lfo18;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Desvantagens</span></strong>: Ocupa mais
+      espaço físico, o que pode ser um problema em data centers ou ambientes
+      que precisam otimizar espaço.</li>
+ </ul>
+</ul>
+
+<h3><strong>2. Suporte para Discos SSD</strong></h3>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l11 level1 lfo19;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Caixas Hot-Swap</span></strong>: Se você
+     deseja facilitar a troca de discos sem desligar o servidor, o ideal é um <strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>gabinete com suporte a discos hot-swap</span></strong>.
+     Isso permite a remoção e substituição dos SSDs sem interrupção do sistema.
+     Algumas controladoras RAID de alto desempenho e gabinetes Rackmount
+     incluem bandejas hot-swap para suportar várias unidades de disco.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l11 level1 lfo19;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Espaço para 12 SSDs</span></strong>: Você
+     precisa de espaço para pelo menos <strong><span style='font-family:"Calibri","sans-serif";
+     mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+     mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>12
+     SSDs</span></strong> de 1,92TB. Certifique-se de que o gabinete tenha <strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>suporte para múltiplos drives</span></strong>
+     de 2,5” ou 3,5” e que tenha espaço suficiente para instalar todos os
+     discos com bandejas e controladoras RAID.</li>
+</ul>
+
+<h3><strong>3. Sistema de Refrigeração</strong></h3>
+
+<p>Com uma configuração que inclui <strong>12 SSDs</strong>, múltiplas máquinas
+virtuais e processadores poderosos (como o Intel Xeon ou AMD EPYC), é essencial
+que o gabinete tenha um <strong>bom sistema de ventilação</strong>.</p>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l14 level1 lfo20;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Ventiladores e Fluxo de Ar</span></strong>:
+     Certifique-se de que o gabinete tenha <strong><span style='font-family:
+     "Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+     minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+     minor-bidi'>ventiladores eficientes</span></strong> (geralmente 80mm,
+     120mm ou 140mm) e que o fluxo de ar seja bem distribuído, especialmente em
+     torno dos SSDs, controladora RAID e CPU. Modelos <strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>2U</span></strong> e <strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>3U</span></strong> geralmente têm espaço
+     para mais ventoinhas e um fluxo de ar mais controlado.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l14 level1 lfo20;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Refrigeração adicional</span></strong>: Se
+     for necessário, considere a adição de <strong><span style='font-family:
+     "Calibri","sans-serif";mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:
+     minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:
+     minor-bidi'>coolers adicionais</span></strong> para a CPU e discos, caso a
+     ventilação interna do gabinete não seja suficiente.</li>
+</ul>
+
+<h3><strong>4. Tamanho e Expansibilidade</strong></h3>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l23 level1 lfo21;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Espaço para Expansão</span></strong>: Caso
+     queira adicionar mais discos ou placas de rede, verifique se o gabinete
+     oferece <strong><span style='font-family:"Calibri","sans-serif";
+     mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+     mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>espaço
+     para expansão de slots PCIe</span></strong> (como uma placa de rede
+     adicional ou placas de armazenamento). Gabinetes <strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Tower</span></strong> tendem a oferecer
+     mais flexibilidade nesse aspecto.</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l23 level1 lfo21;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Conectividade</span></strong>: Para a
+     conectividade de rede, o gabinete deve ter espaço suficiente para acomodar
+     placas de rede de 10GbE ou 25GbE, se necessário.</li>
+</ul>
+
+<h3><strong>5. Fonte de Alimentação (PSU)</strong></h3>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l5 level1 lfo22;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Fonte de Alimentação Redundante</span></strong>:
+     Para servidores, especialmente se estiverem em ambientes de missão
+     crítica, é recomendável usar uma <strong><span style='font-family:"Calibri","sans-serif";
+     mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+     mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>fonte
+     de alimentação redundante (PSU)</span></strong>. Gabinetes <strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Rackmount</span></strong> de servidores
+     geralmente têm suporte nativo para fontes redundantes (uma fonte de backup
+     que assume caso a fonte principal falhe).</li>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     line-height:normal;mso-list:l5 level1 lfo22;tab-stops:list 36.0pt'><strong><span
+     style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+     mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+     mso-bidi-theme-font:minor-bidi'>Capacidade da Fonte</span></strong>:
+     Certifique-se de que a fonte de alimentação tenha potência suficiente (por
+     exemplo, 800W a 1000W ou mais) para suportar todos os componentes
+     (processador, SSDs, controladora RAID, etc.).</li>
+</ul>
+
+<h3><strong>Gabinetes Recomendados</strong></h3>
+
+<p>Aqui estão algumas opções de gabinetes que atendem bem a essas necessidades:</p>
+
+<h4><strong><span style='font-family:"Cambria","serif";mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:major-bidi'>1. Gabinete Rackmount 2U ou 3U (Recomendado
+para servidores em rack)</span></strong></h4>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l15 level1 lfo23;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><strong>Supermicro SuperChassis 846</strong></p>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Espaço para 24 HDDs/SSDs de 3,5” ou 2,5”</span></strong>.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Redundância de fonte de alimentação</span></strong>.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Boas opções de refrigeração com 4
+      ventiladores</span></strong>.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Suporte para bandejas hot-swap</span></strong>,
+      facilitando a manutenção e substituição dos discos.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'>É
+      um modelo popular em data centers devido à sua eficiência e
+      escalabilidade.</li>
+ </ul>
+</ul>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l15 level1 lfo23;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><strong>Chenbro RM23504</strong></p>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Rackmount 2U</span></strong> com <strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>suporte para até 12 discos 2,5”</span></strong>
+      (ideal para SSDs de 2,5”).</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Fonte de alimentação redundante</span></strong>.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l15 level2 lfo23;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Boa ventilação e fácil gerenciamento de
+      cabos</span></strong>.</li>
+ </ul>
+</ul>
+
+<h4><strong><span style='font-family:"Cambria","serif";mso-ascii-theme-font:
+major-latin;mso-hansi-theme-font:major-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:major-bidi'>2. Gabinete Tower (Recomendado para servidores
+não em rack)</span></strong></h4>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l18 level1 lfo24;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><strong>Fractal Design Define 7 XL</strong></p>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'>Grande
+      capacidade de armazenamento, com espaço para até 18 discos de 3,5” ou
+      2,5”.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Excelente fluxo de ar e muito espaço para
+      expansão</span></strong>.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Refrigeração eficiente</span></strong>,
+      ideal para manter os SSDs e o processador refrigerados.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'><strong><span
+      style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:minor-latin;
+      mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>Suporte a múltiplos slots PCIe</span></strong>,
+      excelente para placas de rede ou controladoras RAID adicionais.</li>
+ </ul>
+</ul>
+
+<p style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l18 level1 lfo24;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><strong>Corsair 1000D</strong></p>
+
+<ul type=disc>
+ <ul type=circle>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'>Suporta
+      até <strong><span style='font-family:"Calibri","sans-serif";mso-ascii-theme-font:
+      minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+      mso-bidi-theme-font:minor-bidi'>18 discos 3,5”</span></strong> e tem boa
+      capacidade de expansão.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'>Refrigeração
+      otimizada com <strong><span style='font-family:"Calibri","sans-serif";
+      mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+      mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>ventiladores
+      adicionais</span></strong> e <strong><span style='font-family:"Calibri","sans-serif";
+      mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;
+      mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi'>fácil
+      acesso aos componentes</span></strong>.</li>
+  <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+      auto;line-height:normal;mso-list:l18 level2 lfo24;tab-stops:list 72.0pt'>Ideal
+      para quem precisa de flexibilidade e expansão no futuro.</li>
+ </ul>
+</ul>
+
+<h3><strong>Conclusão</strong></h3>
+
+<p>Se o seu objetivo é montar o servidor em um rack de data center, <strong>um
+gabinete Rackmount 2U ou 3U</strong> como o <strong>Supermicro SuperChassis 846</strong>
+é altamente recomendado, pois ele oferece ótimo suporte para múltiplos SSDs,
+fontes redundantes e boa refrigeração. Para um ambiente onde o rack não é
+necessário e você busca mais flexibilidade, um <strong>gabinete Tower</strong>
+como o <strong>Fractal Design Define 7 XL</strong> também seria uma excelente
+escolha, oferecendo mais espaço interno e facilidade de expansão.</p>
+
+<p>Se precisar de mais detalhes ou ajuda na escolha de outro modelo, estou à
+disposição!</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>
