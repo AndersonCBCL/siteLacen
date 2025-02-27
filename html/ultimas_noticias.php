@@ -28,31 +28,7 @@
         <div class="pagina_ultimas_noticias">
             <h1>&Uacute;ltimas Not&iacute;cias</h1>
             <section class="ultimas_noticias">
-                <div  class="destaque" id="destaque">
-                <script>
-                    function carregarPagina() {
-                        document.querySelectorAll('.news-link').forEach(link => {
-                            link.addEventListener('click', function(event) {
-                                event.preventDefault();
-
-                                const pdfUrl = this.getAttribute('href'); 
-                                const destaqueDiv = document.getElementById('destaque'); 
-                                destaqueDiv.innerHTML = ''; 
-                                
-                                const embed = document.createElement('embed'); 
-                                embed.src = pdfUrl; 
-                                embed.type = 'application/pdf'; 
-                                embed.width = '100%'; 
-                                embed.height = '650px'; 
-
-                                destaqueDiv.appendChild(embed);
-                            });
-                        });
-                    }
-
-                    window.addEventListener('load', carregarPagina);
-                </script>
-                </div>
+                <div class="destaque" id="destaque"></div>
                 <div class="noticias_anteriores">
                     <div class="news-container" id="newsContainer"></div>
                     <div class="pagination" id="pagination"></div>
@@ -60,58 +36,62 @@
             </section>
         </div>
 
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal" class="close">&times;</span>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+
         <script src="../js/noticias.js"></script>
         <script type="module">
-                import { noticias } from '../js/noticias.js';
+            import { noticias } from '../js/noticias.js';
 
-                window.addEventListener('load', () => {
-                    const hash = window.location.hash.substring(1);
+            function exibirModal(url) {
+                const modal = document.getElementById('modal');
+                const modalBody = document.getElementById('modal-body');
 
-                    if (hash) {
-                        const noticia = noticias.find(n => n.id === hash);
+                modalBody.innerHTML = `<iframe src="${url}" width="100%" height="650px"></iframe>`;
+                modal.style.display = 'block';
+            }
+            
+            document.getElementById('closeModal').addEventListener('click', function() {
+                document.getElementById('modal').style.display = 'none';
+            });
 
-                        if (noticia) {
-                            if (noticia.link.endsWith(".pdf")) {
-                                exibirPDF(noticia.link);
-                            } else if (noticia.link.endsWith(".html") || noticia.link.endsWith(".php")) {
-                                carregarPagina(noticia.link);
-                                
-                            } else {
-                                console.error('Formato não suportado:', noticia.link);
-                                document.getElementById("destaque").innerHTML = "<p>Formato não suportado.</p>";
-                            }
-                        } else {
-                            console.error('Notícia não encontrada.');
-                            document.getElementById("destaque").innerHTML = "<p>Notícia não encontrada.</p>";
-                        }
-                    }
-                });
+            async function carregarPagina(url) {
+                const container = document.getElementById("destaque");
 
-                function exibirPDF(url) {
-                    const container = document.getElementById("destaque");
-                    container.innerHTML = `<iframe src="${url}" width="100%" height="650px"></iframe>`;
+                try {
+                    const response = await fetch(url);
+
+                    if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
+
+                    const html = await response.text();
+                    container.innerHTML = html;
+                } catch (error) {
+                    console.error(error);
+                    container.innerHTML = "<p>Erro ao carregar conteúdo.</p>";
                 }
+            }
+            
+            async function carregarNoticias() {
+                const newsContainer = document.getElementById("newsContainer");
 
-                async function carregarPagina(url) {
-                    const container = document.getElementById("destaque");
+                if (newsContainer) {
+                    newsContainer.innerHTML = noticias.map(noticia => `
+                        <a href="${noticia.link}" class="news-link" data-id="${noticia.id}">${noticia.titulo}</a>
+                    `).join('');
 
-                    try {
-                        const response = await fetch(url);
-
-                        if (!response.ok) throw new Error(`Erro HTTP: ${response.status}`);
-
-                        const html = await response.text();
-                        container.innerHTML = html;
-                    } catch (error) {
-                        console.error(error);
-                        container.innerHTML = "<p>Erro ao carregar conteúdo.</p>";
-                    }
+                    configurarEventos();
                 }
+            }
         </script>
 
     </div>
-    <?php
-        include "rodape.html";
-    ?>
+
+    <?php include "rodape.html"; ?>
+
 </body>
 </html>
