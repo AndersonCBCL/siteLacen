@@ -1,4 +1,4 @@
-const noticiasPorPagina = 4;
+const noticiasPorPagina = 10;
 let paginaAtual = 1;
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -89,12 +89,15 @@ function openModalWithContent(noticia) {
     }
 
     modal.style.display = 'block';
-    window.location.hash = noticia.id; 
+    history.replaceState(null, null, window.location.pathname);
+
 }
 
 function fecharModal() {
     modal.style.display = 'none';
-    history.pushState("", document.title, window.location.pathname); 
+    if (window.history.state) {
+        history.back()
+    }
 }
 
 document.addEventListener('click', function (event) {
